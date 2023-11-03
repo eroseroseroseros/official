@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.96, user-scalable=no">
+        
+        <title>New Wealth | Eros Trader Inc</title>
+
+        <!--href stands for hypertext reference-->
+        <link rel="icon" href="logo.png" type="image/png">
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src = "index.js"></script>
+
+        <style>
+            html, body {
+                overflow: hidden;
+            }
+            @media (max-width: 768px) {
+                html, body {
+                    overflow: auto;
+                }
+            }
+        </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><img src="head.png" height="70px" width="229px" style="margin-left: 55px;"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#FAQ" class="navbar__links">FAQ</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#about-us" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html#join" class="navbar__links">Sign Up</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="member-login.html" class="navbar__links">Log In</a>
+                </li>
+            </ul> 
+        </div>
+    </nav>
+    
+    <style>
+        @media (max-width: 768px) {
+            .navbar__menu .navbar__item:nth-child(3) {
+                display: none; /* Hides the third navbar item, which is "About Us" */
+            }
+        }
+    </style>
+
+    <style>
+        .contanan {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .form-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .form-contact input {
+            height: 42px;
+            width: 325px;
+            outline: none;
+            padding: 10px 20px;
+
+            border-color: rgb(179, 179, 179);
+            border-width: 1px;
+
+            border: solid 1px rgb(179, 179, 179);
+            border-radius:10px; /* round corners */
+
+            cursor: auto;
+
+            margin-bottom: 5px;
+
+            box-shadow: none !important;
+            font-size: 16px;
+
+            color: rgb(158, 158, 158);
+        }
+
+
+        .form-contact input:focus {
+            height: 42px;
+            width: 325px;
+            outline: none;
+            padding: 10px 20px;
+
+            border-color: rgb(34, 185, 255);
+            border-width: 1px;
+
+            border: solid 1px rgb(34, 185, 255);
+            border-radius:10px; /* round corners */
+
+            cursor: auto;
+
+            margin-bottom: 5px;
+
+            box-shadow: none !important;
+            font-size: 16px;
+
+            color: rgb(179, 179, 179);
+        }
+
+        .form-contact input[type="submit"]{
+            height: 45px;
+            width: 331px;
+            border-radius: 5px;
+            color: white;
+            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            cursor: pointer;
+        }
+
+        .form-contact input::placeholder {
+            color: rgb(179, 179, 179);
+        }
+
+        .pleaseenter {
+            color: rgb(224, 42, 42);
+            font-size: 17px;
+            display: none;
+        }
+        .in {
+            margin-bottom: 15px;
+            display: none;
+        }
+        .wow {
+            margin-bottom: 40px;
+        }
+        .kl {
+            font-size: 53px;
+            background-color: rgb(122, 2, 133);
+            background-image: linear-gradient(to top, rgb(255, 231, 46) 0%, rgb(255, 0, 212) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+    <div class="contanan">
+        <form action="#" class="form-contact">
+
+            <div class="wow">
+                <p class="kl"><b>Member Login</b></p>
+            </div>
+
+            <div class="in">
+                <p class="pleaseenter">Invaid credentials, please try again.</p>
+            </div>
+            
+            <input id="user" type="text" placeholder="Username" required>
+            <input id="pass" type="password" placeholder="Password" required>
+            <input id="fsubmit" type="submit" placeholder="Login">
+    
+            <!--javascript to change Submit button click, check css-->
+            <script>
+                var button = document.querySelector('.form-contact input[type="submit"]');
+                var finput = document.getElementById('user');
+                var finput1 = document.getElementById('pass');
+                var please = document.querySelector('.pleaseenter');
+                var please2 = document.querySelector('.in');
+                
+                button.addEventListener('click', function(event) {
+                    
+                    if (!finput.checkValidity() || finput1.value === ''){
+                        event.preventDefault();
+                        please.style.display = 'block';
+                        please2.style.display = 'block';
+                    } else {
+                        please.style.display = 'block';
+                        please2.style.display = 'block';
+                    }
+                });            
+            </script>
+        <form>
+    </div>
+    <div class="ordiv">
+        <p class="ortx">Become a member today!</p>
+    </div>
+    <style>
+        .ordiv {
+            position: relative;
+            top: 10px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .ortx {
+            background-color: rgb(122, 2, 133);
+            background-image: linear-gradient(to top, rgb(255, 0, 212) 0%, rgb(255, 227, 46) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-size: 19px;
+        }
+    </style>
+    <div class="butclass">
+        <a href="index.html#join" class="gold-button" id="shrinkable">Sign Up</a>
+    </div>
+    <style>
+        .gold-button {
+            display: inline-block;
+            width: 240px;
+            padding: 10px 20px;
+            background-color: whitesmoke;
+            color: rgb(123, 123, 123);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+          
+        .gold-button:hover {
+            background-image: linear-gradient(to top, rgb(255, 231, 46) 0%, rgb(255, 0, 212) 100%);
+            color: white;
+        }
+
+        .butclass {
+            margin-top: 22px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</body>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.98, user-scalable=no">
+        
+        <title>New Wealth | Eros Trader Inc</title>
+
+        <!--href stands for hypertext reference-->
+        <link rel="icon" href="logo.png" type="image/png">
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src = "index.js"></script>
+
+</head>
+<style>
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><img src="head.png" height="70px" width="229px" style="margin-left: 55px;"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Services</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#FAQ" class="navbar__links">FAQ</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about-us" class="navbar__links">About Us</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#join" class="navbar__links">Sign Up</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="member-login.html" class="navbar__links">Log In</a>
+                </li>
+            </ul> 
+        </div>
+    </nav>
+    
+    <style>
+        @media (max-width: 768px) {
+            .navbar__menu .navbar__item:nth-child(3) {
+                display: none; /* Hides the third navbar item, which is "About Us" */
+            }
+        }
+    </style>
+
+    <style>
+        .sun {
+            border: 7px solid white;
+            position: relative;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .sun:hover {
+            transform: scale(1.04);
+        }
+
+        .first {
+            position: relative;
+            top: 22px;
+            left: 24px;
+        }
+
+        .container {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            display: flex;
+        }
+
+
+        .PP {
+            font-size: 38px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(234, 187, 0) 0%, rgb(255, 204, 0) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: left;
+        }
+
+        .p {
+            font-size: 24px;
+            color: rgb(203, 182, 16);
+            position: relative;
+            text-align: left;
+
+            line-height: 32px;
+        }
+        .pp {
+            display: none;
+        }
+
+        .sec{
+            position: relative;
+            left: -20px;
+            top: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .container{
+                display: block;
+                margin-top: 24px;
+            }
+
+            .PP {
+                font-size: 38px;
+                background-color: rgb(185, 203, 46);
+                background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                position: relative;
+                text-align: center;
+            }
+            .pp {
+                font-size: 24px;
+                color: rgb(203, 182, 16);
+                position: relative;
+                text-align: center;
+                letter-spacing: 0.2px;
+                line-height: 32px;
+                display: block;
+            }
+            .p {
+                display: none;
+            }
+            .sec{
+                top: 24px;
+                left: 6px;
+            }
+            .sun {
+                display: none;
+            }
+            .first{
+                display: none;
+            }
+        }
+
+    </style>
+    
+    <div class="container">
+        <div class="sec">
+            <p class="PP"><b>The Future Of<br>Passive Cryptocurrency Trading</b></p><br>
+            <p class="p">Since 2022 we have generated over<br><b>$44 Million</b> in passive income for our clients using<br>our state of the art technology <i>&copy; Eros Trading Bot</i> and the<br>expertise of 12+ experienced cryptocurrency specialists<br>who analyze domestic & foreign markets to ensure<br>maximum profits for our investors.</p>
+            <p class="pp">Since 2022 we have generated<br>over <b>$44 Million</b> in profits for our clients using our state of the art technology <i>&copy; Eros Trading Bot</i> and the expertise of 12+ experienced cryptocurrency specialists who analyze the market to ensure maximum passive profit for our investors.</p> 
+        </div>
+        
+        <div class="first">
+            <img src="btc.jpg" width="518px" height="345px" class="sun" id="sunu" loading="lazy">
+        </div>
+    </div>
+    
+    <div class="container2">
+        <div class="thir">
+            <div class="thirheader">
+                <p class="ol"><b>What Is Automated<br>Cryptocurrency Arbitrage?</b></p><br>
+            </div>
+            
+            <p class="ol2">Automated cryptocurrency arbitrage is the algorithmic<br>trading of crypto assets in domestic and foreign markets.<br>For example, let's imagine Spains price to buy a crypto<br>asset is cheaper than the US price for the same token,<br>our algorithm will automatically be able to purchase the<br>asset at Spains price using the Euro.</p>
+            <div class="witdiv">
+                <div class="witin">
+                    <p class="ol22">Automated cryptocurrency arbitrage<br>is the algorithmic trading of crypto assets in domestic and foreign markets. For example, let's imagine Spains price to buy a crypto asset is cheaper than the US price for the same token, our algorithm will automatically be able to purchase<br>the asset at Spains price using the Euro.</p>
+                </div>      
+            </div>
+        </div>
+        
+        <img src="sun.jpg" class="so" id="sou" height="345" width="518" loading="lazy">
+        <img src="sun2.jpg" class="so2">
+
+        
+    </div>
+    <style>
+        .signbutdivv {
+            position: relative;
+            top: 40px;
+            left: 165px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .signbutdivv {
+                display: none;
+            }
+        }
+
+
+    </style>
+    <div class="signbutdivv">
+        <a href="member-login.html" class="gold-button" id="shrinkable">Member Login</a>
+    </div>
+    <a id="FAQ"></a>
+
+    <script loading="lazy">
+        document.addEventListener("DOMContentLoaded", function () {
+            const sun = document.getElementById("sunu");
+            const so = document.getElementById("sou");
+            let currentElement = sun;
+            let isHovered = false;
+
+            function toggleTransform() {
+                if (!isHovered) {
+                    currentElement.style.transform = "scale(1)";
+                    currentElement = currentElement === sun ? so : sun;
+                    currentElement.style.transform = "scale(1.04)";
+                }
+            }
+
+            // Set an interval to toggle the transform every 3 seconds
+            const intervalId = setInterval(toggleTransform, 1750);
+
+            // Detect hover and stop the automatic transformation
+            sun.addEventListener("mouseover", () => {
+                if (!isHovered) {
+                    sun.style.transform = "scale(1.044)";
+                    so.style.transform = "scale(1)";
+                    isHovered = true;
+                }
+            });
+
+            so.addEventListener("mouseover", () => {
+                if (!isHovered) {
+                    so.style.transform = "scale(1.044)";
+                    sun.style.transform = "scale(1)";
+                    isHovered = true;
+                }
+            });
+
+            sun.addEventListener("mouseout", () => {
+                isHovered = false;
+            });
+
+            so.addEventListener("mouseout", () => {
+                isHovered = false;
+            });
+        });
+    </script>
+
+    <style>
+
+        .th {
+            display: none;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            .bitgol {
+                display: none;
+            }
+
+            .fop2 {
+                display: none;
+            }
+
+            .fop3 {
+                display: block;
+            }
+
+            .fif {
+                left: auto;
+                right: auto;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                top: 310px;
+            }
+
+            .th {
+                display: block;
+                position: relative;
+                top: -100px;
+            }
+        }
+    </style>
+    
+    <div class="container3" loading="lazy">
+        <div class="forth" style="position: relative; top: -25px;"> 
+            <img src="bit.jpg" height="575px" width="383px" class="bitgol" loading="lazy">
+        </div>
+        
+        <div class="fif">
+            <br>
+            <br>
+            <br>
+            <p class="fop"><b>FAQ</b></p><br>
+            <p class="fop2">- What is the return on investment?<br>-<b> 5.15% guarenteed daily return on investment.<br>Fully automated trading.</b></p><br>
+            <p class="fop2">- How can I view, deposit, or withdraw my investment?<br>-<b> Once you have an Eros Trader account you will be able to<br>login through the private client portal, view your assets and<br>choose to deposit or instantly withdraw your assets.</b></p><br>
+            <p class="fop2">- Are we FDIC Insured?<br>-<b> Eros Trader Inc is federally insured up to $250,000.</b></p><br>
+            <p class="fop2">- How can I fund my account?<br>-<b> For efficiency purposes we only accept bitcoin.</b></p><br>
+            <p class="fop2">- What if I don't have bitcoin?<br>-<b> Contact us and we can help you with the process of<br>purchasing bitcoin with Fiat Currency such as USD, this<br>typically takes 3 days to a week.</b></p><br>
+            <p class="fop2">- How fast can I see results?<br>-<b> The same day you start investing with Eros Trader<br>you will see results.</b></p><br>
+            <div class="th">
+                <p class="fop3">- What is the return on<br>investment?<br>-<b> 5.15% guarenteed daily<br>return on investment.<br>Fully automated trading.</b></p><br><br>
+                <p class="fop3">- How can I view, deposit, or withdraw my investment?<br>-<b> Once you have an Eros Trader<br>account you will be able to<br>login through the private<br>client portal, view your<br>assets and choose to<br>deposit or instantly<br>withdraw your assets.</b></p><br><br>
+                <p class="fop3">- Are we FDIC Insured?<br>-<b> Eros Trader Inc is federally insured up to $250,000.</b></p><br><br>
+                <p class="fop3">- How can I fund my account?<br>-<b> For efficiency purposes<br>we only accept bitcoin.</b></p><br><br>
+                <p class="fop3">- What if I don't have bitcoin?<br>-<b> Contact us and we can help<br>you with the process of<br>purchasing bitcoin with Fiat Currency such as USD, this<br>typically takes 3 days<br>to a week.</b></p><br><br>
+                <p class="fop3">- How fast can I see results?<br>-<b> The same day you start investing with Eros Trader<br>you will see results.</b></p><br>
+            </div>
+
+        </div>
+    </div>
+    <style>
+        .container4 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 175px;
+            display: flex;
+        }
+
+        .innermag {
+            position: relative;
+            left: 300px;
+        }
+         
+        .maasg {
+            border: 7px solid white;
+            position: relative;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .maasg:hover {
+            transform: scale(1.04);
+        }
+
+
+        .fiatt {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .innermag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            left: 45px;
+            top: -42px;
+        }
+        .inner {
+            z-index: 999;
+        }
+        
+        .pole {
+            font-size: 38px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: left;
+        }
+        .loe {
+            font-size: 24px;
+            color: rgb(203, 182, 16);
+            position: relative;
+            text-align: left;
+            letter-spacing: 0.2px;
+            line-height: 32px;
+            display: block;
+
+        }
+        .te {
+            position: relative;
+            top: -60px;
+            left: -50px;
+        }
+        .et {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 15px;
+            right: -10px;
+        }
+
+
+        .gold-button {
+            display: inline-block;
+            width: 240px;
+            padding: 10px 20px;
+            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+          
+        .gold-button:hover {
+            background-image: linear-gradient(to top, rgb(255, 231, 46) 0%, rgb(255, 0, 212) 100%);
+        }
+        
+        .pole2 {
+            display: none;
+        }
+
+        .butclass {
+            margin-top: 25px;
+            margin-right: 150px;
+        }
+
+        .loe2 {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .container4 {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 355px;
+                display: block;
+            }
+
+            .innermag {
+                position: relative;
+                left: 300px;
+            }
+             
+            .maasg {
+                border: 7px solid white;
+                position: relative;
+                border-radius: 5px;
+                transition: transform 0.3s ease;
+            }
+    
+            .maasg:hover {
+                transform: scale(1.04);
+            }
+    
+    
+            .fiatt {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                display: block;
+            }
+    
+            .innermag {
+                display: none;
+            }
+            .inner {
+                z-index: 999;
+            }
+            
+            .pole {
+                font-size: 35px;
+                background-color: rgb(185, 203, 46);
+                background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                position: relative;
+                text-align: center;
+            }
+            .loe {
+                display: none;
+            }
+            .loe2 {
+                display: block;
+                font-size: 24px;
+                color: rgb(203, 182, 16);
+                position: relative;
+                text-align: center;
+                letter-spacing: 0.2px;
+                line-height: 32px;
+            }
+            .te {
+                position: relative;
+                top: -60px;
+                margin-left: 12px;
+            }
+    
+            .butclass {
+                margin-top: 25px;
+                margin-right: 0px;
+            }
+
+            
+
+        }
+          
+
+    </style>
+
+    <div class="mobssimgdiv">
+        <img src="ss.jpg" class="mobssimg" width="390px" height="220px">
+    </div>
+
+    <style>
+        .mobssimgdiv {
+            display: none;
+        }
+
+        .mobssimg {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+        
+            .mobssimgdiv {
+                display: block;
+                position: relative;
+                top: 320px;
+            }
+
+            .mobssimg {
+                display: block;
+                position: relative;
+                border-top: 7px solid white;
+                border-bottom: 7px solid white;
+            }
+
+            .so2 {
+                border-top: 7px solid white;
+                border-bottom: 7px solid white;
+            }
+
+            .witdiv {
+                width: 390px;
+                border-top: 7px solid rgb(255, 230, 0);
+                border-bottom: 7px solid rgb(255, 230, 0);
+            }
+
+            .te {
+                position: relative;
+                top: -33px;
+                left: 0px;
+            }
+            .et {
+                left: 0px;
+            }
+
+        }
+
+    </style>
+    
+    <div class="container4" loading="lazy">
+        <div class="te">
+            <a id="about-us"></a>
+            <br>
+            <br>
+            <br>
+            <p class="pole"><b>The Best Of The Best</b></p><br>
+            <div class="et">
+                <p class="loe">In 2021 Eros Trader Inc was brought to life<br>by experienced crypto currency experts from all<br>around the world with one goal in common, the<br>drive to create a new stream of wealth for the people.<br>With the power of AI there is no telling how high the<br>returns of automated cryptocurrency arbitrage will soar<br>in the coming years, but what we can guarentee is that<br>the Eros Trader team and all its members will be there<br>for the ride to the top. Join today to start earning<br>passively and finally earn your dream income.</p>
+                <p class="loe2">In 2021 Eros Trader Inc was brought to life by experienced crypto currency experts from all around the world with one goal in common, the drive to create a<br>new stream of wealth for the people. With the power of AI<br>there is no telling how high<br>the returns of automated<br>cryptocurrency arbitrage will<br>soar in the coming years,<br><br>but what we can guarentee is<br>that the Eros Trader team and<br>all its members will be there for<br>the ride to the top. Join today to start earning passively and<br>finally earn your dream income.</p>
+            </div>
+            <div class="butclass">
+                <a href="#join" class="gold-button" id="shrinkable">Join Now</a>
+            </div>
+        </div>
+
+        <div class="innermag">
+            <img src="product.jpg" width="523px" height="345px" class="maasg" loading="lazy">
+        </div>
+
+    </div>
+    <script>
+        const button = document.getElementById("shrinkable");
+
+        button.addEventListener("click", function () {
+
+        // Change opacity on click
+        button.style.opacity = 0.5;
+
+        setTimeout(function () {
+            button.style.opacity = 1;
+
+        }, 3000);
+        });
+    </script>
+    <div class="lotcon">
+        <div class="extradivinl">
+            <img src="bcash.jpg" width="515px" height="355px;" class="bcas">
+            <img src="bcash.jpg" width="390px" height="269px;" class="bcas2">
+        </div>
+        <div class="curbtpr">
+            <p class="alk"><b>What is the blockchain and bitcoin?</b></p><br>
+            <p class="alk2">Blockchain is a decentralized, transparent ledger<br>system where data is stored in blocks linked together,<br>creating a secure and immutable chain. Bitcoin, the<br>most renowned cryptocurrency, operates on this<br>blockchain technology, allowing peer-to-peer<br>transactions without a central authority. Introduced in<br>2009 Bitcoin uses a proof-of-work system to validate<br>and record transactions on the blockchain, ensuring<br>security and decentralization.</p><br>
+            <p class="alk12"><b>What is blockchain<br>and bitcoin?</b></p><br>
+            <p class="alk22">Blockchain is a decentralized, transparent ledger system where data is stored in blocks linked together, creating a secure and<br>immutable chain. Bitcoin, the most renowned cryptocurrency,<br>operates on this blockchain technology, allowing peer-to-peer transactions without a<br>central authority. Introduced in 2009 Bitcoin uses a proof-of-work system to validate and record transactions on the<br>blockchain, ensuring security and decentralization.</p><br>
+        </div>
+    </div>
+
+    <style>
+        .alk {
+            font-size: 35px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: left;
+            display: block;
+        }
+        .alk2 {
+            font-size: 25px;
+            color: rgb(203, 182, 16);
+            position: relative;
+            text-align: left;
+            letter-spacing: 0.2px;
+            line-height: 32px;
+            display: block;
+        }
+        .alk12 {
+            font-size: 35px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            display: none;
+        }
+        .alk22 {
+            font-size: 25px;
+            color: rgb(203, 182, 16);
+            position: relative;
+            text-align: center;
+            letter-spacing: 0.2px;
+            line-height: 32px;
+            display: none;
+        }
+        .curbtpr {
+            position: relative;
+            left: 50px;
+            top: -10px;
+        }
+        .lotcon {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            top: 195px;
+            left: -25px;
+            display: flex;
+
+            
+        }
+        .extradivinl {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .bcas {
+            border: 7px solid white;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+        .bcas2 {
+            display: none;
+        }
+
+        .bcas:hover {
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 768px) {
+
+            .bcas2 {
+                display: block;
+                position: relative;
+                border-top: 7px solid white;
+                border-bottom: 7px solid white;
+                border-radius: 0px;
+            }
+            .lotcon {
+                top: 390px;
+                left: 0px;
+                display: block;
+            }
+            .bcas {
+                display: none;
+            }
+            .curbtpr {
+                left: 0px;
+                margin-left: 11px;
+            }
+            .alk {
+                display: none;
+            }
+            .alk2 {
+                display: none;
+            }
+            .alk12 {
+                display: block;
+            }
+            .alk22 {
+                display: block;
+            }
+        }
+
+    </style>
+    
+    <div class="container55">
+        <a id="join"></a>
+        <br>
+        <br>
+        <br>
+        <p class="jtx"><b>Get In Touch</b></p>
+        <div class="dontms">
+            <p class="teleor"><b>Contact us by telegram or our company email<br>below to create an Eros Trader account today and<br>start earning upwards of 5.15% daily returns <br>on your investment.</b></p>
+            <p class="teleor2"><b>Contact us by telegram or<br>our company email below<br>to create an Eros Trader<br>account today and start<br>earning upwards of 5.15%<br>daily returns on your<br>investment.</b></p>
+            <br>
+            <br>
+            <a href="https://t.me/ErosTraderInc" class="gold-button" id="shrinkable" target="_blank">Click for telegram contact</a>
+            <br>
+            <br>
+            <p class="num3"><b>Or email us at</b></p>
+            <br>
+            <p class="num2" onclick="copyToClipboard(this)" >ErosTraderAutomations@proton.me</p>
+            <br>
+            <p class="num3"><b>To get started.</b></p>
+        </div>
+    </div>
+    <script>
+        function copyToClipboard(element) {
+            const emailText = element.innerText;
+
+            // Create a textarea element to hold the text to copy
+            const textArea = document.createElement('textarea');
+            textArea.value = emailText;
+            document.body.appendChild(textArea);
+
+            // Select and copy the text
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            // Show a message indicating that the text has been copied
+            alert('Copied: ' + emailText);
+        }
+    </script>
+    <style>
+        .dontms {
+            margin-top: 15px;
+        }
+        .teleor {
+            font-size: 27px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(45, 125, 191) 0%, rgb(38, 184, 217) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            display: block;
+        }
+        
+        .teleor2 {
+            font-size: 27px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(45, 125, 191) 0%, rgb(38, 184, 217) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            display: none;
+        }
+        .num {
+            font-size: 27px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(145, 145, 145) 0%, rgb(29, 198, 236) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .num:hover {
+            cursor: pointer;
+        }
+        
+        .num2 {
+            font-size: 27px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(145, 145, 145) 0%, rgb(29, 198, 236) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        .num3 {
+            font-size: 16px;
+            background-color: rgb(185, 203, 46);
+            background-image: linear-gradient(to top, rgb(145, 145, 145) 0%, rgb(29, 198, 236) 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+
+            .teleor {
+                display: none;
+            }
+
+            .teleor2 {
+                display: block;
+                font-size: 27px;
+                background-color: rgb(185, 203, 46);
+                background-image: linear-gradient(to top, rgb(46, 161, 255) 0%, rgb(29, 198, 236) 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                position: relative;
+                text-align: center;
+            }
+
+            .num {
+                text-decoration: underline;
+            }
+            
+            .container55{
+                margin-top: 155px;
+                margin-left: 10px;
+            }
+            .jtx {
+                font-size: 44px;
+            }
+
+            .num2 {
+                font-size: 21px;
+            }
+
+            .teleor {
+                font-size: 24px;
+            }
+        }
+        
+    </style>
+
+
+</body>
+<footer>
+
+</footer>
+</html>

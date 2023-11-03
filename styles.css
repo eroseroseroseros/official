@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif
+}
+
+body {
+    background-image: url("01.png");
+    height: 1000px;
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        width: 390px;
+    }
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #777373;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%
+}
+
+
+.navbar__links:hover {
+    color:rgb(230, 208, 38);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .navbar__menu.active {
+        background: whitesmoke;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: black;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+}
+
+/**/
+
+.container2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.so {
+    position: relative;
+
+    border: 7px solid white;
+    border-radius: 5px;
+    left: 55px;
+    top: -10px;
+    transition: transform 0.3s ease;
+}
+
+.so:hover {
+    transform: scale(1.04);
+}
+
+.so2 {
+    display: none;
+}
+
+.thir {
+    position: relative;
+    left: -30px;
+    top: 35px;
+}
+
+.witdiv {
+    display: none;
+}
+
+.ol22 {
+    display: none;
+}
+
+.ol {
+    font-size: 38px;
+    background-color: rgb(122, 2, 133);
+    background-image: linear-gradient(to top, rgb(165, 9, 179) 0%, rgb(246, 25, 147) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: left;
+    position: relative;
+
+}
+
+.ol2 {
+    font-size: 24px;
+    background-color: rgb(122, 2, 133);
+    background-image: linear-gradient(to top, rgb(122, 2, 133) 0%, rgb(165, 89, 172) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: left;
+    position: relative;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+.witin {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .witin {
+        display: block;
+        position: relative;
+        top: 27px;
+        width: 390px;
+    }
+
+    .container2 {
+        position: relative;
+        top: 80px;
+    }
+    .so {
+        display: none;
+    }
+
+    .so2 {
+        display: block;
+        position: absolute;
+        margin-top: -580px;
+        z-index: -1;
+    }
+
+    .container2 {
+        margin-top: 55px;
+    }
+
+    .container2 {
+        display: block;
+
+    }
+
+    .ol {
+        text-align: center;
+    }
+
+    .ol2 {
+        display: none;
+    }
+
+    .ol22 {
+        z-index: 2;
+        font-size: 22px;
+        background-color: rgb(122, 2, 133);
+        background-image: linear-gradient(to top, rgb(122, 2, 133) 0%, rgb(165, 89, 172) 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+
+        position: relative;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        display: block;
+        text-align: center;
+    }
+
+    .witdiv {
+        display: block;
+        background-color: white;
+        z-index: 2;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        height: 380px;
+    }
+    
+    .thir {
+        left: 0px;
+    }
+
+    .thirheader {
+        position: relative;
+        left:7px;
+    }
+    
+}
+
+/**/
+
+.container3 {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 100px;    
+}
+
+.bitgol {
+    position: relative;
+    border: 7px solid white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    left: -40px;
+    top: 13px;
+}
+
+.bitgol:hover {
+    transform: scale(1.04);
+}
+
+.fif {
+    position: relative;
+    top: -50px;
+    left: 40px;
+}
+
+.fop {
+    font-size: 53px;
+    background-color: rgb(122, 2, 133);
+    background-image: linear-gradient(to top, rgb(255, 231, 46) 0%, rgb(255, 0, 212) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.fop2 {
+    font-size: 24px;
+    background-color: rgb(122, 2, 133);
+    background-image: linear-gradient(to top, rgb(165, 9, 179) 0%, rgb(148, 11, 132) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: left;
+    position: relative;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    display: block;
+}
+
+.fop3 {
+    display: none;
+    font-size: 24px;
+    background-color: rgb(122, 2, 133);
+    background-image: linear-gradient(to top, rgb(122, 2, 133) 0%, rgb(148, 11, 132) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+
+/**/
+
+
+.container55 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    height: 650px;
+}
+
+.jtx {
+    font-size: 64px;
+    background-color: rgb(185, 203, 46);
+    background-image: linear-gradient(to top, rgb(27, 215, 232) 0%, rgb(255, 0, 212) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: relative;
+    text-align: center;
+}
