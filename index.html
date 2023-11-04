@@ -8,7 +8,7 @@
         <!--"user-scalable=no" disable zooming when
         clicking in submission boxes on mobile-->
 
-        <meta name="viewport" content="width=device-width, initial-scale=0.97, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         
         <title>New Wealth | Eros Trader Inc</title>
 
@@ -22,7 +22,7 @@
         <script src = "index.js"></script>
         
         <style>
-            html {
+            body {
                 overflow-x: hidden;
             }
         </style>
@@ -131,6 +131,7 @@
             .container{
                 display: block;
                 margin-top: 24px;
+                width: 100%;
             }
 
             .PP {
@@ -159,7 +160,7 @@
             }
             .sec{
                 top: 24px;
-                left: 6px;
+                left: 0px;
             }
             .sun {
                 display: none;
@@ -174,14 +175,22 @@
     <div class="container">
         <div class="sec">
             <p class="PP"><b>The Future Of<br>Passive Cryptocurrency Trading</b></p><br>
-            <p class="p">Since 2022 we have generated over<br><b>$44 Million</b> in passive income for our clients using<br>our state of the art technology <i>&copy; Eros Trading Bot</i> and the<br>expertise of 12+ experienced cryptocurrency specialists<br>who analyze domestic & foreign markets to ensure<br>maximum profits for our investors.</p>
-            <p class="pp">Since 2022 we have generated<br>over <b>$44 Million</b> in profits for our clients using our state of the art technology <i>&copy; Eros Trading Bot</i> and the expertise of 12+ experienced cryptocurrency specialists who analyze the market to ensure maximum passive profit for our investors.</p> 
+            <div class="insec05">
+                <p class="p">Since 2022 we have generated over<br><b>$44 Million</b> in passive income for our clients using<br>our state of the art technology <i>&copy; Eros Trading Bot</i> and the<br>expertise of 12+ experienced cryptocurrency specialists<br>who analyze domestic & foreign markets to ensure<br>maximum profits for our investors.</p>
+                <p class="pp">Since 2022 we have generated<br>over <b>$44 Million</b> in profits for our clients using our state of the art technology <i>&copy; Eros Trading Bot</i> and the expertise of 12+ experienced cryptocurrency specialists who analyze the market to ensure maximum passive profit for our investors.</p>
+            </div>
         </div>
+        <style>
+            .insec05 {
+                display: flex;
+            }
+        </style>
         
         <div class="first">
             <img src="btc.jpg" width="518px" height="345px" class="sun" id="sunu" loading="lazy">
         </div>
     </div>
+
     
     <div class="container2">
         <div class="thir">
@@ -213,6 +222,10 @@
         @media (max-width: 768px) {
             .signbutdivv {
                 display: none;
+            }
+
+            .container2 {
+                width: 100%;
             }
         }
 
@@ -296,6 +309,7 @@
                 align-items: center;
                 justify-content: center;
                 top: 310px;
+                width: 100%;
             }
 
             .th {
@@ -324,11 +338,11 @@
             <p class="fop2">- How fast can I see results?<br>-<b> The same day you start investing with Eros Trader<br>you will see results.</b></p><br>
             <div class="th">
                 <p class="fop3">- What is the return on<br>investment?<br>-<b> 5.15% guarenteed daily<br>return on investment.<br>Fully automated trading.</b></p><br><br>
-                <p class="fop3">- How can I view, deposit, or withdraw my investment?<br>-<b> Once you have an Eros Trader<br>account you will be able to<br>login through the private<br>client portal, view your<br>assets and choose to<br>deposit or instantly<br>withdraw your assets.</b></p><br><br>
+                <p class="fop3">- How can I view, deposit, or withdraw my investment?<br>-<b> Once you have an Eros<br>Trader account you will be<br>able to login through the<br>private client portal,<br>view your assets and<br>choose to deposit or<br>instantly withdraw your<br>assets.</b></p><br><br>
                 <p class="fop3">- Are we FDIC Insured?<br>-<b> Eros Trader Inc is federally insured up to $250,000.</b></p><br><br>
                 <p class="fop3">- How can I fund my account?<br>-<b> For efficiency purposes<br>we only accept bitcoin.</b></p><br><br>
                 <p class="fop3">- What if I don't have bitcoin?<br>-<b> Contact us and we can help<br>you with the process of<br>purchasing bitcoin with Fiat Currency such as USD, this<br>typically takes 3 days<br>to a week.</b></p><br><br>
-                <p class="fop3">- How fast can I see results?<br>-<b> The same day you start investing with Eros Trader<br>you will see results.</b></p><br>
+                <p class="fop3">- How fast can I see results?<br>-<b> The same day you start<br>investing with Eros Trader<br>you will see results.</b></p><br>
             </div>
 
         </div>
@@ -421,7 +435,7 @@
             display: inline-block;
             width: 240px;
             padding: 10px 20px;
-            background-image: linear-gradient(to top, rgb(203, 182, 16) 0%, rgb(255, 204, 0) 100%);
+            background-image: linear-gradient(to top, rgb(243, 217, 50) 0%, rgb(228, 205, 0) 100%);
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
@@ -454,6 +468,7 @@
                 position: relative;
                 top: 355px;
                 display: block;
+                width: 100%;
             }
 
             .innermag {
@@ -514,7 +529,7 @@
             .te {
                 position: relative;
                 top: -60px;
-                margin-left: 12px;
+                left: 0px;
             }
     
             .butclass {
@@ -530,7 +545,7 @@
     </style>
 
     <div class="mobssimgdiv">
-        <img src="ss.jpg" class="mobssimg" width="390px" height="220px">
+        <img src="ss.jpg" class="mobssimg" width="100%" height="220px">
     </div>
 
     <style>
@@ -560,23 +575,22 @@
             .so2 {
                 border-top: 7px solid white;
                 border-bottom: 7px solid white;
+                width: 100%;
             }
 
             .witdiv {
-                width: 390px;
+                width: 100%;
                 border-top: 7px solid rgb(255, 230, 0);
                 border-bottom: 7px solid rgb(255, 230, 0);
             }
 
-            .te {
-                position: relative;
-                top: -33px;
-                left: 0px;
-            }
             .et {
                 left: 0px;
             }
-
+            
+            .container3 {
+                width: 100%;
+            }
         }
 
     </style>
@@ -621,13 +635,13 @@
     <div class="lotcon">
         <div class="extradivinl">
             <img src="bcash.jpg" width="515px" height="355px;" class="bcas">
-            <img src="bcash.jpg" width="390px" height="269px;" class="bcas2">
+            <img src="bcash.jpg" width="100%" height="269px;" class="bcas2">
         </div>
         <div class="curbtpr">
             <p class="alk"><b>What is the blockchain and bitcoin?</b></p><br>
             <p class="alk2">Blockchain is a decentralized, transparent ledger<br>system where data is stored in blocks linked together,<br>creating a secure and immutable chain. Bitcoin, the<br>most renowned cryptocurrency, operates on this<br>blockchain technology, allowing peer-to-peer<br>transactions without a central authority. Introduced in<br>2009 Bitcoin uses a proof-of-work system to validate<br>and record transactions on the blockchain, ensuring<br>security and decentralization.</p><br>
             <p class="alk12"><b>What is blockchain<br>and bitcoin?</b></p><br>
-            <p class="alk22">Blockchain is a decentralized, transparent ledger system where data is stored in blocks linked together, creating a secure and<br>immutable chain. Bitcoin, the most renowned cryptocurrency,<br>operates on this blockchain technology, allowing peer-to-peer transactions without a<br>central authority. Introduced in 2009 Bitcoin uses a proof-of-work system to validate and record transactions on the<br>blockchain, ensuring security and decentralization.</p><br>
+            <p class="alk22">Blockchain is a decentralized,<br>transparent ledger system<br>where data is stored in blocks<br>linked together, creating a<br>secure and immutable chain.<br>Bitcoin, the most renowned<br>cryptocurrency, operates on<br>this blockchain technology, allowing peer-to-peer transactions without a<br>central authority. Introduced<br>in 2009 Bitcoin uses a proof<br>of work system to validate and<br>record transactions on the<br>blockchain, ensuring security<br>and decentralization.</p><br>
         </div>
     </div>
 
@@ -714,6 +728,10 @@
 
         @media (max-width: 768px) {
 
+            .extradivinl {
+                width: 100%;
+            }
+
             .bcas2 {
                 display: block;
                 position: relative;
@@ -725,6 +743,7 @@
                 top: 390px;
                 left: 0px;
                 display: block;
+                width: 100%;
             }
             .bcas {
                 display: none;
@@ -768,8 +787,14 @@
             <p class="num2" onclick="copyToClipboard(this)" >ErosTraderAutomations@proton.me</p>
             <br>
             <p class="num3"><b>To get started.</b></p>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     <script>
         function copyToClipboard(element) {
             const emailText = element.innerText;
@@ -795,7 +820,7 @@
         .teleor {
             font-size: 27px;
             background-color: rgb(185, 203, 46);
-            background-image: linear-gradient(to top, rgb(45, 125, 191) 0%, rgb(38, 184, 217) 100%);
+            background-image: linear-gradient(to top, rgb(192, 122, 225) 0%, rgb(187, 29, 161) 100%);
             background-size: 100%;
             -webkit-background-clip: text;
             -moz-background-clip: text;
@@ -809,7 +834,7 @@
         .teleor2 {
             font-size: 27px;
             background-color: rgb(185, 203, 46);
-            background-image: linear-gradient(to top, rgb(45, 125, 191) 0%, rgb(38, 184, 217) 100%);
+            background-image: linear-gradient(to top, rgb(192, 122, 225) 0%, rgb(187, 29, 161) 100%);
             background-size: 100%;
             -webkit-background-clip: text;
             -moz-background-clip: text;
@@ -881,7 +906,7 @@
                 display: block;
                 font-size: 27px;
                 background-color: rgb(185, 203, 46);
-                background-image: linear-gradient(to top, rgb(46, 161, 255) 0%, rgb(29, 198, 236) 100%);
+                background-image: linear-gradient(to top, rgb(192, 122, 225) 0%, rgb(187, 29, 161) 100%);
                 background-size: 100%;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
@@ -897,7 +922,8 @@
             
             .container55{
                 margin-top: 155px;
-                margin-left: 10px;
+                margin-left: 0px;
+                width: 100%;
             }
             .jtx {
                 font-size: 44px;
@@ -913,7 +939,9 @@
         }
         
     </style>
-
+    <br>
+    <br>
+    <br>
 
 </body>
 <footer>
