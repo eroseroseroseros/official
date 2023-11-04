@@ -10,6 +10,7 @@ body {
     height: max-content;
 }
 
+
 .navbar {
     background: rgb(255, 255, 255);
     height: 80px;
@@ -24,7 +25,7 @@ body {
 
 @media (max-width: 768px) {
     .navbar{
-        width: 390px;
+        width: 100%;
     }
 }
 
@@ -176,7 +177,7 @@ body {
 
 .so {
     position: relative;
-
+    display: block;
     border: 7px solid white;
     border-radius: 5px;
     left: 55px;
@@ -311,11 +312,12 @@ body {
     
     .thir {
         left: 0px;
+        width: 100%;
     }
 
     .thirheader {
         position: relative;
-        left:7px;
+        left: 0px;
     }
     
 }
@@ -413,12 +415,12 @@ body {
 .jtx {
     font-size: 64px;
     background-color: rgb(185, 203, 46);
-    background-image: linear-gradient(to top, rgb(27, 215, 232) 0%, rgb(255, 0, 212) 100%);
+    background-image: linear-gradient(to top, rgb(255, 0, 212) 0%, rgb(27, 215, 232) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     position: relative;
-    text-align: center;
+    text-align: center;   
 }
